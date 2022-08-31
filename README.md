@@ -5,3 +5,4 @@
 ## Setup: 
 
 - installation packages: `pip install django` and `pip install -r requirements.txt`
+- Run server: `python manage.py runserver`
