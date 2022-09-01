@@ -4,8 +4,11 @@
 
     <h2>Details about {{ snack.name }}</h2>
     <h2>Reviewer: {{ snack.reviewer }}</h2>
-    <h2>{{ snack.rating }}</h2>
+    <h2>{{ snack.definition }}</h2>
     <p><a href="{% url 'snack_update' snack.pk %}">+ Update Snack</a></p>
     <p><a href="{% url 'snack_delete' snack.pk %}">- Delete Snack</a></p>
+
+    <a href="{% url 'snack_list' %}">Home</a>
+
 
 {%  endblock content %}
