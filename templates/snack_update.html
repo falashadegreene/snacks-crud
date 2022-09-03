@@ -2,12 +2,12 @@
 
 {%  block content %}
 
-    <h1>Update Snack</h1>
+    <h1 class="text-4xl text-pink-800 mb-8">Update Snack</h1>
 
-    <form  method="POST">
+    <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
-    <input type="submit" value="SAVE">
+    <input class="border-2 border-cyan-400 bg-cyan-400 px-8 mt-8 rounded-md"  type="submit" value="SAVE">
     </form>
 
 <a href="{% url 'snack_list' %}">Home</a>

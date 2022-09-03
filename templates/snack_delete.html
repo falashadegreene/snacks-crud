@@ -2,16 +2,16 @@
 
 {%  block content %}
 
-    <h1>Delete Snack</h1>
+    <h1 class="text-4xl text-pink-800 mb-8">Delete Snack</h1>
 
-    <form  method="POST">
+    <form method="POST">
     {% csrf_token %}
     {{ form.as_p }}
         <p>Are you sure you want to delete "{{ snack.name }}"?</p>
     <input type="submit" value="OK">
     </form>
 
-    <a href="{% url 'snack_list' %}">Home</a>
+    <a class="border-2 border-cyan-400 bg-cyan-400 px-8 mt-8 rounded-md" href="{% url 'snack_list' %}">Home</a>
 
 
 {%  endblock content %}
